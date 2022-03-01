@@ -1,0 +1,79 @@
+*  Generated for: PrimeSim
+*  Design library name: cp_lib1
+*  Design cell name: cp_lvdsdriver_tb
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Mon Feb 28 10:54:26 2022
+
+.global gnd!
+********************************************************************************
+* Library          : cp_lib1
+* Cell             : cp_lvdsdriver
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt cp_lvdsdriver d_in dbar_in vdda vssa vbias voa vob
+xm22 net83 net83 vdda vdda p105 w=0.67u l=0.12u nf=1 m=1
+xm21 net85 net85 vdda vdda p105 w=0.67u l=0.12u nf=1 m=1
+xm20 net73 net85 vdda vdda p105 w=0.67u l=0.12u nf=1 m=1
+xm19 net69 net83 vdda vdda p105 w=13.6u l=0.12u nf=4 m=1
+xm18 net49 vbias vssa vssa n105 w=0.67u l=0.12u nf=1 m=1
+xm17 net53 vbias vssa vssa n105 w=0.67u l=0.12u nf=1 m=1
+xm16 net85 vob net53 net53 n105 w=21.7u l=0.12u nf=7 m=1
+xm15 net83 net54 net53 net53 n105 w=21.7u l=0.12u nf=7 m=1
+xm14 net83 net54 net49 net49 n105 w=21.7u l=0.12u nf=7 m=1
+xm13 net85 voa net49 net49 n105 w=21.7u l=0.12u nf=7 m=1
+xm12 net25 net73 vssa vssa n105 w=8.4u l=0.12u nf=3 m=1
+xm8 vob dbar_in net25 net25 n105 w=15u l=0.03u nf=5 m=1
+xm11 net73 net73 vssa vssa n105 w=0.42u l=0.12u nf=1 m=1
+xm7 net69 d_in vob vob n105 w=14u l=0.03u nf=4 m=1
+xm9 voa d_in net25 net25 n105 w=15u l=0.03u nf=5 m=1
+xm10 net69 dbar_in voa voa n105 w=14u l=0.03u nf=4 m=1
+.ends cp_lvdsdriver
+
+********************************************************************************
+* Library          : cp_lib1
+* Cell             : cp_lvdsdriver_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 d_in dbar_in net8 gnd! net11 voa vob cp_lvdsdriver
+v2 net11 gnd! dc=0.6
+v1 net8 gnd! dc=1.8
+v4 dbar_in gnd! dc=0 pulse ( 1.5 0 1n 1n 1n 50n 100n )
+v3 d_in gnd! dc=0 pulse ( 0 1.5 1n 1n 1n 50n 100n )
+c6 vob gnd! c=1p
+c5 voa gnd! c=1p
+
+
+
+
+
+
+
+
+.tran '1n' '1200n' name=tran
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(d_in) v(dbar_in) v(voa) v(vob)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
