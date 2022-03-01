@@ -17,7 +17,7 @@ this is
 
 
 # Netlist<br/>
-You can view the circuit netlists [here](https://github.com/MadhuriKadam9/LVDS-Driver-Design-for-High-Speed-Application/tree/main/Netlist)<br/>
+You can view the circuit netlists [here](https://github.com/MadhuriKadam9/LVDS-Driver-Design-for-High-Speed-Application/blob/main/LVDS_netlist.spi)<br/>
 # Author<br/>
 Mrs. Madhuri Kadam, ME in Electronic and Telecommunication Engineering at Sardat Patel Institute of Technology, Mumbai <br/>
 # Acknowledgements <br/>
