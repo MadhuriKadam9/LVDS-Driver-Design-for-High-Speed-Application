@@ -58,11 +58,13 @@ Above diagram shows a typical LVDS signal voltage and timing diagram, where outp
 # Netlist<br/>
 You can view the circuit netlists [here](https://github.com/MadhuriKadam9/LVDS-Driver-Design-for-High-Speed-Application/blob/main/LVDS_netlist.spi)<br/>
 # Author<br/>
-Mrs. Madhuri Kadam, ME in Electronics and Telecommunication Engineering at Sardat Patel Institute of Technology, Mumbai <br/>
+Mrs. Madhuri Kadam, ME in Electronics and Telecommunication Engineering, Mumbai <br/>
+Assistant Professor, Shree L. R. Tiwari College of Engineering, Mira Rd
+
 # Acknowledgements <br/>
-[1.Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/)<br/>
-[2.Cloud Based Analog IC Design Hackathon](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)<br/>
-[3.Synopsys India](https://www.synopsys.com/)<br/>
+[1. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/)<br/>
+[2. Cloud Based Analog IC Design Hackathon](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)<br/>
+[3. Synopsys India](https://www.synopsys.com/)<br/>
 # Reference <br/>
 [1]  Hari Shanker Gupta, RM Parmar and R K Dave, “High Speed LVDS     Driver for SERDES ,” IEEE Conference Proc., July 2009.
 
