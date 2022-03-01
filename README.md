@@ -61,7 +61,7 @@ Above diagram shows a typical LVDS signal voltage and timing diagram, where outp
 
 # Netlist and Primesim Log <br/>
 You can view the circuit netlists [here](https://github.com/MadhuriKadam9/LVDS-Driver-Design-for-High-Speed-Application/blob/main/LVDS_netlist.spi)<br/>
-You can view the Primesim log [here](https://github.com/MadhuriKadam9/LVDS-Driver-Design-for-High-Speed-Application/blob/main/LVDS_netlist.spi)<br/>
+You can view the Primesim log [here](https://github.com/MadhuriKadam9/LVDS-Driver-Design-for-High-Speed-Application/blob/main/Primesim-log.txt)<br/>
 
 # Future Scope
 LVDS Driver circuit can be redesigned and optimised to get Voap-p = 400 mV which is presently getting as 700 mV.  
