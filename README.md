@@ -18,6 +18,11 @@ Serializer is a Mixed Block which uses LVDS Driver. It's Block diagram is shown 
 
 Differential Signals when passed over the transmission line, noise will be added in both the signals in same phase. So when differential output voltage is taken i.e. Vout = Vo+ - Vo- , it will be noise free. Thus Diffrential signalling has noise rejection capability. 
 
+## LVDS Driver Vlotage levels and Timing Diagram
+<img width="764" alt="vlg_timing_wf" src="https://user-images.githubusercontent.com/88900482/156192010-b04212ee-aec7-4587-b7a0-d169070e4c3c.PNG">
+
+Above diagram shows a typical LVDS signal voltage and timing diagram, where output common mode voltage level is 1.2V and Vodiff = Vo+ - Vo- = 350mV
+
 # Tool used<br/>
 *Synopsys Custom Compiler*:  The Synopsys Custom Compiler™ design environment is a modern solution for full-custom analog, custom digital, and mixed-signal IC design. As the heart of the Synopsys Custom Design Platform, Custom Compiler provides design entry, simulation management and analysis, and custom layout editing features. This tool was used to design the circuit on a transistor level.<br/>
 *Synopsys Primewave*:  PrimeWave™ Design Environment is a comprehensive and flexible environment for simulation setup and analysis of analog, RF, mixed-signal design, custom-digital and memory designs within the Synopsys Custom Design Platform. This tool helped in various types of simulations of the above designed circuit.<br/>
